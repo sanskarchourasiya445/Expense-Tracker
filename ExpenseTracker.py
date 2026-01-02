@@ -29,19 +29,19 @@ def add_expense():
 
 # View all expenses
 def view_expenses():
-    if len(expensesList) == 0:
-        print("No expenses recorded yet.")
-        return
-
-    print("\nExpense History:")
-    for i, expense in enumerate(expensesList, start=1):
-        print(
-            f"Expense-{i} -> "
-            f"Date: {expense['date']}, "
-            f"Category: {expense['category']}, "
-            f"Description: {expense['description']}, "
-            f"Amount: {expense['amount']}"
-        )
+    if len(expensesList) == 0: 
+        print("No expenses recorded yet.") 
+    else: 
+        print("\nExpense History:")
+        i = 1 
+        for expense in expensesList: 
+            print(
+                f"Expense-{i} -> " 
+                f"Date: {expense['date']}, " 
+                f"Category: {expense['category']}, "
+                f"Description: {expense['description']}, " 
+                f"Amount: {expense['amount']}" )
+            i += 1
 
 # View total spending
 def view_total():
