@@ -61,7 +61,7 @@ This project helps users **add expenses**, **view expense history**, and **calcu
 
 ```text
 Expense-tracker/
-├── expense_tracker.py
+├── ExpenseTracker.py
 └── README.md
 
 
